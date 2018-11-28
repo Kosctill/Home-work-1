@@ -1,0 +1,8 @@
+E:\Study\ITA\Home works\Task 1\Task 1\bin\Debug\Task 1.exe.config
+E:\Study\ITA\Home works\Task 1\Task 1\bin\Debug\Task 1.xml
+E:\Study\ITA\Home works\Task 1\Task 1\bin\Debug\Task 1.exe
+E:\Study\ITA\Home works\Task 1\Task 1\bin\Debug\Task 1.pdb
+E:\Study\ITA\Home works\Task 1\Task 1\obj\Debug\Task 1.csprojAssemblyReference.cache
+E:\Study\ITA\Home works\Task 1\Task 1\obj\Debug\Task 1.csproj.CoreCompileInputs.cache
+E:\Study\ITA\Home works\Task 1\Task 1\obj\Debug\Task 1.exe
+E:\Study\ITA\Home works\Task 1\Task 1\obj\Debug\Task 1.pdb
