@@ -8,7 +8,7 @@ namespace Task_1.Models
 {
     public class Developer : Employee
     {
-        public Developer(string firstName, string lastName, decimal salary, byte experience, Manager manager)
-                            : base(firstName, lastName, salary, experience, manager) { }
+        public Developer ( string firstName, string lastName, decimal salary, byte experience, Manager manager) :
+                         base ( firstName, lastName, salary, experience, manager ) { }
     }
 }
