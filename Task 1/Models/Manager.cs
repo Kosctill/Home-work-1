@@ -17,7 +17,8 @@ namespace Task_1.Models
         public List<Employee> Team { set; get; }
 
         /// <summary>
-        /// This cosntructor makes initial initialization of the Manager entity
+        /// Accepts a first name, last name, salary, experience, team
+        /// and appropriate manager for initial initialiation
         /// </summary>
         /// <param name="firstName">First name of the manager</param>
         /// <param name="lastName">Last name of the manager</param>

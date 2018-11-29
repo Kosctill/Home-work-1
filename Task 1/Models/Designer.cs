@@ -17,7 +17,8 @@ namespace Task_1.Models
         public float EfficiencyCoefficient { set; get; }
 
         /// <summary>
-        /// It's constructor makes initial initialization of the Designer entity
+        /// Accepts a first name, last name, salary, experience, efficiency coefficient
+        /// and appropriate manager for initial initialiation
         /// </summary>
         /// <param name="firstName">First name of the designer</param>
         /// <param name="lastName">Last name of the designer</param>

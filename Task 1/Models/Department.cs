@@ -18,7 +18,7 @@ namespace Task_1.Models
         public List<Manager> Managers { set; get; }
 
         /// <summary>
-        /// This contructor makes initial initialization of the Department entity
+        /// Accepts a initial list managers for initialiations
         /// </summary>
         /// <param name="managers"></param>
         public Department ( List<Manager> managers )

@@ -37,8 +37,9 @@ namespace Task_1.Models
         public Manager Manager { set; get; }
 
         /// <summary>
-        /// This contructor makes initial intialization for Employee entity
-        /// </summary>
+        /// Accepts a first name, last name, salary, experience
+        /// and appropriate manager for initial initialiation 
+        ///</summary>
         /// <param name="firstName">First name of the employee</param>
         /// <param name="lastName">Last name of the employee</param>
         /// <param name="salary">Salary of the employee</param>
