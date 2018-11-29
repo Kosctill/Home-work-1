@@ -6,10 +6,25 @@ using System.Threading.Tasks;
 
 namespace Task_1.Models
 {
+    /// <summary>
+    /// It's class is inherited from Employee class and represents Manager entity
+    /// </summary>
     public class Manager : Employee
     {
+        /// <summary>
+        /// Team developers and designers 
+        /// </summary>
         public List<Employee> Team { set; get; }
 
+        /// <summary>
+        /// This cosntructor makes initial initialization of the Manager entity
+        /// </summary>
+        /// <param name="firstName">First name of the manager</param>
+        /// <param name="lastName">Last name of the manager</param>
+        /// <param name="salary">Salary of the manager</param>
+        /// <param name="experience">Experience of the manager</param>
+        /// <param name="manager">Appropriate manager of the manager</param>
+        /// <param name="team">Team </param>
         public Manager ( string firstName, string lastName, decimal salary,
                          byte experience, Manager manager, List<Employee> team ) :
                          base ( firstName, lastName, salary, experience, manager )
@@ -17,6 +32,10 @@ namespace Task_1.Models
             this.Team = team;
         }
 
+        /// <summary>
+        /// Calculates salary depending of the size of team
+        /// </summary>
+        /// <returns>Total salary with bonuses</returns>
         public override decimal GetSalary()
         {
             decimal finalSalary = this.Salary;

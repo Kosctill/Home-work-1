@@ -4,5 +4,156 @@
         <name>Task 1</name>
     </assembly>
     <members>
+        <member name="T:Task_1.Models.Department">
+            <summary>
+            This class contains list managers with their team
+            </summary>
+        </member>
+        <member name="P:Task_1.Models.Department.Managers">
+            <summary>
+            List of managers
+            </summary>
+        </member>
+        <member name="M:Task_1.Models.Department.#ctor(System.Collections.Generic.List{Task_1.Models.Manager})">
+            <summary>
+            This contructor makes initial initialization of the Department entity
+            </summary>
+            <param name="managers"></param>
+        </member>
+        <member name="M:Task_1.Models.Department.GiveSalary">
+            <summary>
+            Give salary every managers and every employees with their team
+            </summary>
+        </member>
+        <member name="T:Task_1.Models.Designer">
+            <summary>
+            It's class is inherited of Employee class and represents Designer entity
+            </summary>
+        </member>
+        <member name="P:Task_1.Models.Designer.EfficiencyCoefficient">
+            <summary>
+            Efficiency coefficient of the designer
+            </summary>
+        </member>
+        <member name="M:Task_1.Models.Designer.#ctor(System.String,System.String,System.Decimal,System.Byte,Task_1.Models.Manager,System.Single)">
+            <summary>
+            It's constructor makes initial initialization of the Designer entity
+            </summary>
+            <param name="firstName">First name of the designer</param>
+            <param name="lastName">Last name of the designer</param>
+            <param name="salary">Salary of the designer</param>
+            <param name="experience">Experience of the designer</param>
+            <param name="manager">Appropriate manager of the designer</param>
+            <param name="efficiencyCoefficient">Efficiency coefficient of the designer</param>
+        </member>
+        <member name="M:Task_1.Models.Designer.GetSalary">
+            <summary>
+            Calculates salary depending of efficiency coefficient
+            </summary>
+            <returns>Total salary with bonuses</returns>
+        </member>
+        <member name="T:Task_1.Models.Developer">
+            <summary>
+            This class is inherited from Employee class and represents type Developer
+            </summary>
+        </member>
+        <member name="M:Task_1.Models.Developer.#ctor(System.String,System.String,System.Decimal,System.Byte,Task_1.Models.Manager)">
+            <summary>
+            This constructor makes initial initialization for Developer entity
+            </summary>
+            <param name="firstName">Fist name of the developer</param>
+            <param name="lastName">Last name of the developer</param>
+            <param name="salary">Salary of the developer</param>
+            <param name="experience">Experience of the developer</param>
+            <param name="manager">Appropriate manager of the developer</param>
+        </member>
+        <member name="T:Task_1.Models.Employee">
+            <summary>
+            It's abstract class for all types of employees (Developers, Designers, Managers)
+            </summary>
+        </member>
+        <member name="P:Task_1.Models.Employee.FirstName">
+            <summary>
+            First name of the employee
+            </summary>
+        </member>
+        <member name="P:Task_1.Models.Employee.LastName">
+            <summary>
+            Last name of the employee
+            </summary>
+        </member>
+        <member name="P:Task_1.Models.Employee.Salary">
+            <summary>
+            Salary of the employee
+            </summary>
+        </member>
+        <member name="P:Task_1.Models.Employee.Experience">
+            <summary>
+            Experience of the employee
+            </summary>
+        </member>
+        <member name="P:Task_1.Models.Employee.Manager">
+            <summary>
+            Appropriate Manager of the employee
+            </summary>
+        </member>
+        <member name="M:Task_1.Models.Employee.#ctor(System.String,System.String,System.Decimal,System.Byte,Task_1.Models.Manager)">
+            <summary>
+            This contructor makes initial intialization for Employee entity
+            </summary>
+            <param name="firstName">First name of the employee</param>
+            <param name="lastName">Last name of the employee</param>
+            <param name="salary">Salary of the employee</param>
+            <param name="experience">Experience of the employee</param>
+            <param name="manager">Appropriate manager of the employee</param>
+        </member>
+        <member name="M:Task_1.Models.Employee.GetSalary">
+            <summary>
+            Returns salary taking into account bonuses
+            </summary>
+            <returns>Salary with bonuses</returns>
+        </member>
+        <member name="M:Task_1.Models.Employee.GetSalaryWithBonus(System.Decimal)">
+            <summary>
+            Calculates bonuses to salary taking into
+            account experience and adds them to salary
+            </summary>
+            <param name="finalSalary">Salary of employee</param>
+            <returns>Salary along with bonuses</returns>
+        </member>
+        <member name="M:Task_1.Models.Employee.ToString">
+            <summary>
+            Returns general information about employee,
+            namely: first name, last name, manager and experience 
+            </summary>
+            <returns>General information about amployee</returns>
+        </member>
+        <member name="T:Task_1.Models.Manager">
+            <summary>
+            It's class is inherited from Employee class and represents Manager entity
+            </summary>
+        </member>
+        <member name="P:Task_1.Models.Manager.Team">
+            <summary>
+            Team developers and designers 
+            </summary>
+        </member>
+        <member name="M:Task_1.Models.Manager.#ctor(System.String,System.String,System.Decimal,System.Byte,Task_1.Models.Manager,System.Collections.Generic.List{Task_1.Models.Employee})">
+            <summary>
+            This cosntructor makes initial initialization of the Manager entity
+            </summary>
+            <param name="firstName">First name of the manager</param>
+            <param name="lastName">Last name of the manager</param>
+            <param name="salary">Salary of the manager</param>
+            <param name="experience">Experience of the manager</param>
+            <param name="manager">Appropriate manager of the manager</param>
+            <param name="team">Team </param>
+        </member>
+        <member name="M:Task_1.Models.Manager.GetSalary">
+            <summary>
+            Calculates salary depending of the size of team
+            </summary>
+            <returns>Total salary with bonuses</returns>
+        </member>
     </members>
 </doc>
